@@ -1,0 +1,19 @@
+<div class="filter">
+  <ng-select *ngIf="sortFilterControl"
+    class="filter__item"
+    placeholder="Сортировка"
+    [formControl]="sortFilterControl"
+    [items]="sortItems"
+    bindValue="value" 
+    bindLabel="name">
+  </ng-select>
+
+  <ng-select  *ngIf="genreFilterControl"
+    class="filter__item"
+    placeholder="Телеканалы"
+    [formControl]="genreFilterControl"
+    [items]="genreItems"
+    bindValue="id" 
+    bindLabel="name">
+  </ng-select>
+</div>

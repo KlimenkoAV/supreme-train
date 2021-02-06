@@ -1,0 +1,36 @@
+@import "../../../../assets/mixins/mixin";
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 23px;
+
+  &__item {
+    width: 160px;
+    height: 96px;
+  }
+}
+
+.card {
+  &__inner {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transition: transform 1s;
+    &:hover {
+      transform: translate(0, -10px);
+    }
+  }
+}
+
+@include media("within", "md") {
+  .list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@include media("within", "xs") {
+  .list {
+    grid-template-columns: 1fr 1fr;
+  }
+}

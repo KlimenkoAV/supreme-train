@@ -1,0 +1,6 @@
+<div class="list">
+    <div *ngFor="let item of channels$ | async" class="list__item card" > 
+        <div class="card__inner" [style.background-image]="'url('+ item.picture.backgrounds[0] + ')'">
+        </div>
+    </div>
+</div>

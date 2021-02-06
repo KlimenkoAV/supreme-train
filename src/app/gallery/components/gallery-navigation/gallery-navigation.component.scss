@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+
+  &__item {
+    padding: 22px 40px;
+    display: flex;
+    width: 160px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+
+    &--active {
+      border-bottom: 2px solid #ba9d5a;
+    }
+  }
+
+  &__link {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+    &--active {
+      color: #ba9d5a;
+    }
+  }
+}

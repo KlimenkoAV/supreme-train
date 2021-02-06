@@ -15,6 +15,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
-  }
+    ],
+    "paths": {
+      "@app/*": ["./src/app/*"],
+      "@gallery/*": ["./src/app/gallery/*"],
+      "@assets/*": ["./src/assets/*"],
+      
+    }
+  },
+
 }
